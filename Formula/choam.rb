@@ -2,7 +2,7 @@ class Choam < Formula
   desc "Cross-machine file synchronization for large media repositories"
   homepage "https://github.com/jlmalone/choam"
   url "https://github.com/jlmalone/choam/releases/download/v1.0.0/choam-1.0.0.zip"
-  sha256 "ea691990432dbebe314db7077b095f2b0b8619fde923f3e1378570ad553abd8a"
+  sha256 "44551b1384ef997ddaf3906735e2a4b8bcd23341ee1d6be40ec88a948f44c5a7"
   license "MIT"
 
   depends_on "openjdk@21"
