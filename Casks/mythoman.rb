@@ -1,6 +1,6 @@
 cask "mythoman" do
-  version "1.0.8"
-  sha256 "3622c03a4128b3404627c9e5a8f23695622ebd0ba1f9c9df72b3e3331c43e967"
+  version "1.0.9"
+  sha256 "38222c861639cf12f6e003465a46d0040733db28108ed151e4e7e73892c756f1"
 
   url "https://github.com/jlmalone/homebrew-tap/releases/download/v#{version}/Mythoman-#{version}.dmg"
   name "Mythoman"
