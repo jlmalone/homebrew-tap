@@ -10,7 +10,7 @@ cask "mythoman" do
   app "Mythoman.app"
 
   zap trash: [
-    "~/Library/Application Support/Mythoman",
+    "~/.mythoman",
     "~/Library/Logs/Mythoman",
   ]
 end
