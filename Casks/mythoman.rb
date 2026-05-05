@@ -1,6 +1,6 @@
 cask "mythoman" do
-  version "1.0.7"
-  sha256 "925534b81b4f104e25999562ae953dd14254a1ab56d5284b47d5b85dc8b232af"
+  version "1.0.8"
+  sha256 "3622c03a4128b3404627c9e5a8f23695622ebd0ba1f9c9df72b3e3331c43e967"
 
   url "https://github.com/jlmalone/homebrew-tap/releases/download/v#{version}/Mythoman-#{version}.dmg"
   name "Mythoman"
@@ -10,7 +10,7 @@ cask "mythoman" do
   app "Mythoman.app"
 
   zap trash: [
-    "~/Library/Application Support/Mythoman",
+    "~/.mythoman",
     "~/Library/Logs/Mythoman",
   ]
 end
