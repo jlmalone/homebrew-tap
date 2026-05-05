@@ -9,6 +9,8 @@ cask "mythoman" do
 
   app "Mythoman.app"
 
+  binary "#{appdir}/Mythoman.app/Contents/MacOS/Mythoman", target: "mythoman"
+
   zap trash: [
     "~/.mythoman",
     "~/Library/Logs/Mythoman",
