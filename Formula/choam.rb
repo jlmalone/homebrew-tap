@@ -15,11 +15,10 @@ class Choam < Formula
     inreplace "bin/choam", /^#!.*/, "#!/bin/bash"
 
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/choam"
 
     # Set JAVA_HOME in the wrapper script
     env = Language::Java.overridable_java_home_env("21")
-    bin.env_script_all_files libexec/"bin", env
+    (bin/"choam").write_env_script libexec/"bin/choam", env
   end
 
   test do
