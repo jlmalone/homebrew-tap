@@ -2,7 +2,7 @@ class Gambit < Formula
   desc "Pure-Kotlin CLI client for the Gambit chess DAG + tracker protocol"
   homepage "https://github.com/jlmalone/gambit_cli"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/gambit-v0.2.0/gambit-0.2.0.zip"
-  sha256 "21893c9a98621b992f259c805039aec72fc9fbec46e3258d8f295433442ebe75"
+  sha256 "c5f072aa54ad91281820ade6fef922448151b8bd6b786b97274cbd4e67ba8967"
   version "0.2.0"
 
   depends_on "openjdk@21"
