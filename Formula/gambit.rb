@@ -15,6 +15,6 @@ class Gambit < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/gambit version")
+    assert_match "0.2.1", shell_output("#{bin}/gambit version")
   end
 end
