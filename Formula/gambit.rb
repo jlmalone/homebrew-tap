@@ -1,9 +1,9 @@
 class Gambit < Formula
   desc "Pure-Kotlin CLI client for the Gambit chess DAG + tracker protocol"
   homepage "https://github.com/jlmalone/gambit_cli"
-  url "https://github.com/jlmalone/homebrew-tap/releases/download/gambit-v0.7.0/gambit-0.7.0.zip"
-  sha256 "2679ecc3477ee93524ba07779364b331ce4ec7fa92850d8f7323904ea304776c"
-  version "0.7.0"
+  url "https://github.com/jlmalone/homebrew-tap/releases/download/gambit-v0.8.0/gambit-0.8.0.zip"
+  sha256 "7cbaa6a301192c2fdf7870a25599f653f50a501049f773cbb1b1afac318feacb"
+  version "0.8.0"
 
   depends_on "openjdk@21"
 
@@ -15,6 +15,6 @@ class Gambit < Formula
   end
 
   test do
-    assert_match "0.7.0", shell_output("#{bin}/gambit version")
+    assert_match "0.8.0", shell_output("#{bin}/gambit version")
   end
 end
