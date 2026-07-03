@@ -1,13 +1,12 @@
 class Choam < Formula
   desc "Cross-machine file synchronization for large media repositories"
   homepage "https://github.com/jlmalone/choam"
-  version "2.0.8.112"
+  version "2.0.8.117"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/choam-v#{version}/choam-#{version}.zip"
-  sha256 "206b75e660da6b8efa1c7c3419e0847fd87aac6b1ff139da4e17db1c3619493a"
+  sha256 "9e9b1fc8c52e5ef8297ee00984be7201329a9f2cf2d8a89f723558ada6ffac09"
   license "MIT"
 
   depends_on "openjdk@21"
-  depends_on "rsync"
 
   def install
     # Remove Windows batch file
