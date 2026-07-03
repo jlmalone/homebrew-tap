@@ -7,6 +7,7 @@ class Choam < Formula
   license "MIT"
 
   depends_on "openjdk@21"
+  depends_on "rsync"
 
   def install
     # Remove Windows batch file
