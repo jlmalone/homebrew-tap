@@ -1,9 +1,9 @@
 class Learnchinese < Formula
   desc "Terminal client for LearnChinese: study Mandarin with cross-device sync"
   homepage "https://github.com/jlmalone/learnchinese_cli"
-  version "0.1.3"
+  version "0.1.4"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/learnchinese-v#{version}/learnchinese-#{version}.tar.gz"
-  sha256 "f245fa7a72ac63ca5605851021254dc2997dd9d26d436b9a21820561018d26d1"
+  sha256 "2bf648d183068da01bc6cd8c801cb94b95fa5b753e00df3f8e5df39abda399d4"
 
   depends_on "openjdk@21"
 
