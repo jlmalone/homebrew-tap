@@ -1,9 +1,9 @@
 class Learnchinese < Formula
   desc "Terminal client for LearnChinese: study Mandarin with cross-device sync"
   homepage "https://github.com/jlmalone/learnchinese_cli"
-  version "0.1.0"
+  version "0.1.1"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/learnchinese-v#{version}/learnchinese-#{version}.tar.gz"
-  sha256 "e77fdcdf58b8fac934c08256a3a5ea272765320129103ce71925c16c734b170b"
+  sha256 "5b8fe3c3e3f3f208031dc51903b7556ce304eb982bfecc74461ff8eadc19cd21"
 
   depends_on "openjdk@21"
 
@@ -21,6 +21,6 @@ class Learnchinese < Formula
 
   test do
     # version is the only deterministic invocation; anything else touches ~/.learnchinese or network.
-    assert_match "0.1.0", shell_output("#{bin}/learnchinese version")
+    assert_match version.to_s, shell_output("#{bin}/learnchinese version")
   end
 end
