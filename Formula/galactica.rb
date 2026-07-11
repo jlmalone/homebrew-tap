@@ -1,9 +1,9 @@
 class Galactica < Formula
   desc "Charter Forge and the Galactica CLI: compose a star system's founding charter"
   homepage "https://github.com/jlmalone/galactica"
-  version "0.1.0"
+  version "0.1.1"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/galactica-v#{version}/galactica-#{version}.tar.gz"
-  sha256 "3bc2261521cd2f875263e4b80279e12da9772617be711eb90ad10ec4ddcb8738"
+  sha256 "f8c8391f3d195b4adefdb965258485fa8e6d4b925c899328e2d275e123cbcbce"
 
   depends_on "openjdk@21"
 
