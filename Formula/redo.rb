@@ -1,9 +1,9 @@
 class Redo < Formula
   desc "Local-first distributed task manager with Firebase-backed sync"
   homepage "https://github.com/jlmalone/redo"
-  version "0.0.46"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/redo-v#{version}/redo-#{version}.tar.gz"
-  sha256 "d41ad7f3f7c0198e715ea8a3dbe3180a8a4816f184b5d07dc05a1c42477313c2"
+  version "0.0.47"
+  sha256 "78b3386bf4d6a7d5bfa9270b27f4dc74c1a0efbe9587b32755863db131843b49"
 
   depends_on "openjdk@21"
 
@@ -15,7 +15,7 @@ class Redo < Formula
     libexec.install Dir["*"]
 
     env = Language::Java.overridable_java_home_env("21").merge(
-      "REDO_JAR" => libexec/"libexec/redo.jar"
+      "REDO_JAR" => libexec/"libexec/redo.jar",
     )
     (bin/"redo").write_env_script libexec/"bin/redo", env
   end
