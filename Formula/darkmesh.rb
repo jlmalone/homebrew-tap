@@ -1,8 +1,8 @@
 class Darkmesh < Formula
   desc "Self-healing Tailscale + VPN coexistence guard with port-scoped fail-closed"
   homepage "https://github.com/jlmalone/darkmesh-vpn-guard"
-  url "https://github.com/jlmalone/homebrew-tap/releases/download/darkmesh-v0.1.3/darkmesh-0.1.3.tar.gz"
-  sha256 "de1853c021cd23498b3e5ee67b63afd705ada518878d744cab495d482ce64b56"
+  url "https://github.com/jlmalone/homebrew-tap/releases/download/darkmesh-v0.1.4/darkmesh-0.1.4.tar.gz"
+  sha256 "79a8090a71b8c51685301c91223fbf9410917242228ddd983f2ef1f003812564"
   license "MIT"
 
   depends_on :macos
