@@ -3,7 +3,7 @@ class Choam < Formula
   homepage "https://github.com/jlmalone/choam"
   version "2.0.12.124"
   url "https://github.com/jlmalone/homebrew-tap/releases/download/choam-v#{version}/choam-#{version}.zip"
-  sha256 "7472cbf43349e8cd6c1cb586628510df01f53d3020b542a0bd8573f5d5352d26"
+  sha256 "13affe8678302b09f38d9489037653f22bc4b00d02e27b4b5d70a077311b2429"
   license "MIT"
 
   depends_on "openjdk@21"
