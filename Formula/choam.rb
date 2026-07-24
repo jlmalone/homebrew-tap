@@ -1,9 +1,8 @@
 class Choam < Formula
   desc "Cross-machine file synchronization for large media repositories"
   homepage "https://github.com/jlmalone/choam"
-  version "2.0.12.124"
-  url "https://github.com/jlmalone/homebrew-tap/releases/download/choam-v#{version}/choam-#{version}.zip"
-  sha256 "13affe8678302b09f38d9489037653f22bc4b00d02e27b4b5d70a077311b2429"
+  url "https://github.com/jlmalone/homebrew-tap/releases/download/choam-v2.0.12.124/choam-2.0.12.124.zip"
+  sha256 "a412b3f5abe59a77f7ba35397282d498f63e073217b39161d4cc5828be6ba4c8"
   license "MIT"
 
   depends_on "openjdk@21"
@@ -17,8 +16,8 @@ class Choam < Formula
 
     libexec.install Dir["*"]
 
-    # Set JAVA_HOME in the wrapper script
-    env = Language::Java.overridable_java_home_env("21")
+    # Always use the declared JDK. Login shells may export an older JAVA_HOME.
+    env = Language::Java.java_home_env("21")
     (bin/"choam").write_env_script libexec/"bin/choam", env
   end
 
