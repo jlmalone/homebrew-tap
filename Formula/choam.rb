@@ -1,8 +1,8 @@
 class Choam < Formula
   desc "Cross-machine file synchronization for large media repositories"
   homepage "https://github.com/jlmalone/choam"
+  url "https://github.com/jlmalone/homebrew-tap/releases/download/choam-v2.0.13.125/choam-2.0.13.125.zip"
   version "2.0.13.125"
-  url "https://github.com/jlmalone/homebrew-tap/releases/download/choam-v#{version}/choam-#{version}.zip"
   sha256 "1daf72d44033fdb21cd3101f9147010bb78ee048993f26ff0a91631dc54db49c"
   license "MIT"
 
@@ -17,8 +17,9 @@ class Choam < Formula
 
     libexec.install Dir["*"]
 
-    # Set JAVA_HOME in the wrapper script
-    env = Language::Java.overridable_java_home_env("21")
+    # CHOAM targets Java 21 bytecode. Pin the formula dependency so an unrelated
+    # machine-wide JAVA_HOME cannot select an older, incompatible runtime.
+    env = Language::Java.java_home_env("21")
     (bin/"choam").write_env_script libexec/"bin/choam", env
   end
 
