@@ -1,6 +1,6 @@
 cask "server-monitor" do
   version "1.2.0"
-  sha256 "6619f8cd01c4f5483734ee1e14b825dcbc9996a306d34185f4ce03e457329547"
+  sha256 "116e45e0fb2668c41bcc88a30ef9543f6baa397da792a82a727a05af36cdfffe"
 
   url "https://github.com/jlmalone/server_monitor/releases/download/v#{version}/ServerMonitor-#{version}.dmg"
   name "Server Monitor"
