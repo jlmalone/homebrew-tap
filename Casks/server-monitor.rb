@@ -1,27 +1,19 @@
 cask "server-monitor" do
-  version "1.0.1"
-  sha256 "1a91aff1d90cc1aeb29af201408651b2634e7e7217ee6e4017fd33a4daaa4b2c"
+  version "1.2.0"
+  sha256 "010b8d4611a16a26b0472e119cc4d29621d432d097cabd50c449f74acf5c29a8"
 
   url "https://github.com/jlmalone/server_monitor/releases/download/v#{version}/ServerMonitor-#{version}.dmg"
   name "Server Monitor"
   desc "Menu-bar monitor for launchd services, VPN protection, and file transfers"
   homepage "https://github.com/jlmalone/server_monitor"
 
+  depends_on :macos
+
   app "ServerMonitor.app"
 
-  # App is not yet notarized; after install, first launch needs a one-time
-  # Gatekeeper approval (right-click -> Open), or:
-  #   xattr -dr com.apple.quarantine "/Applications/ServerMonitor.app"
-  caveats <<~EOS
-    ServerMonitor.app is not notarized yet. On first launch:
-      right-click the app in /Applications -> Open -> Open
-    or clear the quarantine flag:
-      xattr -dr com.apple.quarantine "/Applications/ServerMonitor.app"
-  EOS
-
   zap trash: [
+    "~/.config/server-monitor",
     "~/Library/Application Support/ServerMonitor",
     "~/Library/Preferences/vision.salient.ServerMonitor.plist",
-    "~/.config/server-monitor",
   ]
 end
