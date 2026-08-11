@@ -1,6 +1,6 @@
 cask "ergosphere" do
-  version "1.0.14.115"
-  sha256 "4bf4105881c851f4f68e81966f2f5496244654f6ac690bd66c0a0030d42c3689"
+  version "1.0.15.116"
+  sha256 "de4e1c5f66384a1e41a56ee7a68487ee437e52b0cba3569bad48b656bb70555b"
 
   url "https://github.com/jlmalone/homebrew-tap/releases/download/ergosphere-v#{version}/Ergosphere-#{version}.dmg"
   name "Ergosphere"
