@@ -1,8 +1,8 @@
 class Redo < Formula
   desc "Local-first distributed task manager with Firebase-backed sync"
   homepage "https://redotasks.com/"
-  url "https://github.com/jlmalone/homebrew-tap/releases/download/redo-v0.0.55/redo-0.0.55.tar.gz"
-  sha256 "2e2f10c014e74c789e48555cdb0820c76495602f0037e98cedef3daa39e62b74"
+  url "https://github.com/jlmalone/homebrew-tap/releases/download/redo-v0.0.59/redo-0.0.59.tar.gz"
+  sha256 "592b9f744f57c3d1eed54ad95d7c05d14882626a056d1cac603fe0f1d28c0817"
 
   depends_on "openjdk@21"
 
